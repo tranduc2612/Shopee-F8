@@ -15,7 +15,6 @@ const homeProduce = $(".home-product-wrap")
 
 const app = {
     render: function(dataProduce){
-        console.log(dataProduce)
         const htmls =  dataProduce.map(produce=>{
             return `
             <!-- Product item -->
@@ -127,6 +126,7 @@ const app = {
             })
             .then(callback)
     },
+
     start: function(){
         this.getProduce(this.render)
 
